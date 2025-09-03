@@ -1,0 +1,66 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.todoWrapper {
+    max-width: 600px;
+    margin: 0px auto;
+}
+
+.todoWrapper .todoHead {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.todoWrapper .todoHead button {
+    padding: 5px 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.todoWrapper .todoBody {
+    margin: 15px 0px;
+}
+
+input {
+    padding: 10px;
+    font-size: 24px;
+    color: #000;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: flex;
+    justify-content: space-between;
+    background: #eeb7c1;
+    padding: 10px;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+ul li div {
+    display: flex;
+    gap: 10px;
+}
+
+ul li div button {
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+ul li .deleteBtn {
+    margin-right: auto;
+}
