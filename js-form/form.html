@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title> JS Basic Assignment </title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet">
+   <link href="./css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+   <div class="form-main-wrapper">
+      <form action="/submit_form" method="post" id="regForm">
+         <div class="first-row">
+            <div>
+               <label for="firstname">First Name *</label>
+               <input type="text" id="firstname" name="firstname" placeholder="First name" class="mr15"
+                  autocomplete="on">
+               <span class="errorText" id="fnameError"></span>
+            </div>
+            <div>
+               <label for="lastname">Last Name *</label>
+               <input type="text" id="lastname" name="lastname" placeholder="Last name" autocomplete="on">
+               <span class="errorText" id="lnameError"></span>
+            </div>
+
+         </div>
+         <div class="row">
+            <label for="lastname">Email *</label>
+            <input type="email" id="email" name="email" placeholder="Email" autocomplete="on">
+            <span class="errorText" id="emailError"></span>
+         </div>
+         <div class="row">
+            <label for="dob">DOB *</label>
+            <input type="date" id="dob" name="dob" autocomplete="on">
+            <span class="errorText" id="dobError"></span>
+         </div>
+         <div class="row">
+            <select name="gender">
+               <option value="gender">Gender</option>
+               <option value="male">Male</option>
+               <option value="female">Female</option>
+               <option value="other">Other</option>
+            </select>
+         </div>
+         <div class="row">
+            <label for="country">Country *</label>
+            <select id="country" name="country" autocomplete="on">
+               <option value="country">country</option>
+               <option value="usa">United States</option>
+               <option value="canada">Canada</option>
+               <option value="uk">United Kingdom</option>
+               <option value="australia">Australia</option>
+            </select>
+            <span class="errorText" id="countryError"></span>
+         </div>
+         <div class="row">
+            <label for="phone">Phone *</label>
+            <input type="tel" id="phone" name="phone" placeholder="phone" autocomplete="on">
+            <span class="errorText" id="phoneError"></span>
+         </div>
+         <div class="row">
+            <label for="address">Address *</label>
+            <textarea id="address" name="address" rows="4" cols="50" maxlength="250" placeholder="Address"
+               autocomplete="on"></textarea>
+            <div style="display: flex; justify-content: space-between;">
+               <span class="errorText" id="addressError"></span>
+               <span id="addressCount" class="char-count">250 characters remaining</span>
+            </div>
+
+         </div>
+
+
+         <div class="password-wrapper row">
+            <label for="password">password</label>
+            <input type="password" id="password" name="password" placeholder="password" autocomplete="on">
+            <i class="fa fa-eye" aria-hidden="true" id="visible"></i>
+         </div>
+         <div class="password-wrapper row">
+            <label for="cpassword">confirm_password</label>
+            <input type="password" id="cpassword" name="confirm_password" placeholder="confirm_password"
+               autocomplete="on">
+            <i class="fa fa-eye" aria-hidden="true" id="cvisible"></i>
+            <span class="errorText" id="passwordError"></span>
+         </div>
+         <p class="inst-label"> Password should contain :</p>
+         <ul>
+            <li id="minLength" class=""> <span></span> Minimum 8 characters </li>
+            <li id="capitalLetter" class=""> <span></span> Minimum 1 capital letter </li>
+            <li id="number" class=""> <span></span> Minimum 1 numeric character </li>
+            <li id="specialChar" class=""> <span></span> Minimum 1 special character </li>
+         </ul>
+         <input type="submit" value="Submit" class="submit-bnt">
+      </form>
+   </div>
+   <script src="./script/script.js" defer></script>
+</body>
+
+</html>

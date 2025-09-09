@@ -1,0 +1,134 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-color: #FFCD54;
+	font-family: "Roboto", sans-serif;
+}
+
+.mr15 {
+	margin-right: 15px;
+}
+
+.form-main-wrapper {
+	max-width: 500px;
+	margin: 0px auto;
+	padding: 30px 0px;
+}
+
+.form-main-wrapper .row {
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.form-main-wrapper input {
+	width: 100%;
+	padding: 8px;
+	border-radius: 10px;
+	box-sizing: border-box;
+	border: 0px;
+}
+
+.form-main-wrapper select {
+	width: 100%;
+	padding: 8px;
+	border-radius: 10px;
+	box-sizing: border-box;
+	border: 0px;
+}
+
+.form-main-wrapper textarea {
+	width: 100%;
+	padding: 8px;
+	border-radius: 10px;
+	box-sizing: border-box;
+	border: 0px;
+}
+
+.first-row {
+	display: flex;
+	justify-content: space-between;
+	gap: 15px;
+	margin-bottom: 10px;
+}
+
+.first-row div {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 100%;
+}
+
+.form-main-wrapper label {
+	font-size: 14px;
+}
+
+.inst-label {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+ul {
+	list-style: none;
+	margin-bottom: 30px;
+	margin-top: 15px;
+}
+
+ul li {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+ul li {
+	display: flex;
+	align-items: center;
+}
+
+ul li span {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	background-color: #000000;
+	border-radius: 50%;
+	margin-right: 15px;
+}
+
+.errorText {
+	/* position: relative;
+	top: -7px; */
+	font-size: 14px;
+	color: red;
+}
+
+.char-count {
+	font-size: 14px;
+}
+
+.password-wrapper {
+	position: relative;
+	cursor: pointer;
+}
+
+.password-wrapper i {
+	position: absolute;
+	top: 35px;
+	right: 12px;
+
+}
+
+.submit-bnt {
+	background-color: #00BF63;
+	color: #ffffff;
+}
+
+.valid {
+	color: #ffffff;
+}
+
+.valid span {
+	background-color: #00BF63;
+}
