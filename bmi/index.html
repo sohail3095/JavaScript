@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <img src="./images/bg.jpg" alt="bg-img" class="bg-img" />
+    <div class="wrapper">
+        <h2>BMI Calculator</h2>
+        <div class="bmi-wrapper">
+            <form action="" autocomplete="on" id="bmiForm">
+                <label for="name">Name</label>
+                <input type="text" id="name" autocomplete="name" />
+                <span></span>
+                <label for="height">Height</label>
+                <input type="text" id="height" autocomplete="height" value="" />
+                <label for="weight">Weight</label>
+                <input type="text" id="weight" value=""  autocomplete="weight" />
+                <p id="result"></p>
+                <button type="submit" id="btn">Calculate</button>
+            </form>
+            <p>Please enter height [CM] and Weight in [KG]</p>
+        </div>
+    </div>
+
+    <script>
+
+        // const button = document.querySelector("button");
+        // button.addEventListener("click", (e) => {
+        //   e.preventDefault;
+        //   const name = document.querySelector("#name").value;
+        //   const height = document.querySelector("#height").value;
+        //   const weight = document.querySelector("#weight").value;
+        //   const bmi = weight / (((height / 100) * height) / 100);
+        //   const total = bmi.toFixed(2);
+        //   document.getElementById("result").innerHTML = `Hi ${name} Your BMI is ${total}`;
+        //   checkData();
+
+        // });
+
+        // const userName = document.querySelector('#name');
+
+        // const checkData = () => {
+
+        //   const usernamevalue = userName.value.trim();
+
+        //   if (usernamevalue == "") {
+        //     setError(userName, "please fill the user name");
+        //   } else {
+        //     setSuccess(userName);
+        //   }
+
+        // }
+
+        // const setError = (uname, msg) => {
+        //   const parantbox = uname.parentElement;
+        //   parantbox.className = "bmi-wrapper error";
+        //   // var spanText = parantbox.querySelector('span').innerHTML=msg;
+        //   const spanT = parantbox.querySelector('span').innerText = msg;
+        // }
+
+    </script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
